@@ -1,0 +1,13 @@
+<div attr="data.main.attributes" ko-style="data.main.style" css="data.main.css">
+    <h3 ko-style="data.main.style" css="data.main.css"  data-collapsible="true">
+        <a if="data.link.attributes().href" attr="data.link.attributes" ko-style="data.link.style" css="data.link.css">
+            <span attr="data.title.attributes" html="data.title.html"></span>
+        </a>
+        <div ifnot="data.link.attributes().href" attr="data.empty_link.attributes" ko-style="data.empty_link.style" css="data.empty_link.css">
+            <span attr="data.title.attributes" html="data.title.html"></span>
+        </div>
+    </h3>
+    <ul data-content="true">
+        <render args="masterTemplate"></render>
+    </ul>
+</div>

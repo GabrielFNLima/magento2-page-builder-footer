@@ -1,0 +1,16 @@
+<li attr="data.main.attributes" ko-style="data.main.style" css="data.main.css">
+    <a if="data.link.attributes().href" attr="data.link.attributes" ko-style="data.link.style" css="data.link.css">
+        <img if="data.image.attributes().src"
+             attr="data.image.attributes"
+             css="data.image.css"
+             ko-style="data.image.style">
+        <span attr="data.text.attributes" html="data.text.html"></span>
+    </a>
+    <div ifnot="data.link.attributes().href" attr="data.empty_link.attributes" ko-style="data.empty_link.style" css="data.empty_link.css">
+        <img if="data.image.attributes().src"
+             attr="data.image.attributes"
+             css="data.image.css"
+             ko-style="data.image.style">
+        <span attr="data.text.attributes" html="data.text.html"></span>
+    </div>
+</li>

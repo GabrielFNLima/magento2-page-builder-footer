@@ -1,0 +1,21 @@
+{
+  "name": "devgfnl/module-page-builder-footer",
+  "version": "1.0.0",
+  "description": "A module for Magento 2 that adds a new content type to enable easy creation of footers using Page Builder.",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "magento/module-page-builder": "*"
+  },
+  "license": [
+    "MIT"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "GFNL\\PageBuilderFooter\\": ""
+    }
+  }
+}

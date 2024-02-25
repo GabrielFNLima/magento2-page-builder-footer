@@ -1,0 +1,15 @@
+<div
+    class="pagebuilder-content-type pagebuilder-footer children-min-height"
+    attr="data.main.attributes"
+    ko-style="data.main.style"
+    css="data.main.css"
+    event="{ mouseover: onMouseOver, mouseout: onMouseOut }, mouseoverBubble: false">
+    <render args="getOptions().template"></render>
+    <h3 data-bind="liveEdit: { field: 'title', placeholder: 'Title' }"
+        class="pagebuilder-footer-item-collapsible" aria-expanded="true"></h3>
+    <div data-role="content">
+        <div afterRender="afterRender">
+            <render args="childTemplate"></render>
+        </div>
+    </div>
+</div>

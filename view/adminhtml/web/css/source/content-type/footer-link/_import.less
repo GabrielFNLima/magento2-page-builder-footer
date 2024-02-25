@@ -1,0 +1,34 @@
+//
+//  Footer Item styles
+//  _____________________________________________
+
+& when (@media-common = true) {
+    [data-content-type="footer-link"] {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        [data-element="image"] {
+            width: 16px;
+            height: auto;
+        }
+
+        .pagebuilder-options.pagebuilder-options-visible {
+            top: -10px;
+        }
+
+        .pagebuilder-image-uploader-container {
+            visibility: visible;
+
+            .pagebuilder-image-empty-preview {
+                background: inherit;
+                height: auto;
+                margin-top: 35px;
+            }
+        }
+
+        .footer-link-placeholder {
+            width: 100%;
+        }
+    }
+}
